@@ -1,0 +1,22 @@
+{
+    "list":[
+        {
+            "imgUrl": "/static/images/read.png",
+            "title": "速闻阅读",
+            "description": "阅读速闻可获得更多测试打卡机会~",
+            "link": "/read"
+        },
+        {
+            "imgUrl": "/static/images/invite.png",
+            "title": "邀新赚信用",
+            "description": "快来赚取信用分吧~",
+            "link": "/invite"
+        },
+        {
+            "imgUrl": "/static/images/fire.png",
+            "title": "搭火线",
+            "description": "参与搭火线活动，还有意外惊喜哦~",
+            "link": "/fire"
+        }
+    ]
+}

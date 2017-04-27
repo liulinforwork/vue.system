@@ -12,7 +12,7 @@ Mock.mock(
     '/index/getList',
     {
         "data":{
-            "code":"1000",
+            "code":"200",
             "msg":"success",
             "data|10-11":[
                 {
@@ -22,7 +22,7 @@ Mock.mock(
                     "detail":"@cparagraph",
                     "imgGrounp|1-9":["@image"],
                     "articleId|+1":1
-                },
+                }
             ]
         }
     }
@@ -32,7 +32,7 @@ Mock.mock(
         '/index/getImgList',
         {
             "data":{
-                "code":"1000",
+                "code":"200",
                 "msg":"success",
                 "data|3-6":[
                     {
@@ -53,7 +53,7 @@ Mock.mock(
             "data":{
                 "code":"1000",
                 "msg":"success",
-                "data":[
+                "data|5-7":[
                     {
                         "name":"@cname",
                         "tag|1-3":["标签1"],
@@ -145,7 +145,7 @@ Mock.mock(
             "data":{
                 "code":"1000",
                 "msg":"success",
-                "data":[
+                "data|10":[
                     {
                         "name":"@cname",
                         "tag|1-3":["标签1"],

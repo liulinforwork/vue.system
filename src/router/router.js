@@ -7,9 +7,10 @@ import App from '../App.vue';
 import Index from '../pages/index.vue';
 import Voucher from '../pages/voucher.vue';
 import Balance from '../pages/balance.vue';
-import O2o from '../pages/o2o.vue';
-import Correct from '../pages/correct.vue';
-import Statistics from '../pages/statistics.vue';
+import ArticleList from '../pages/articleList.vue';
+import FrontEnd from '../pages/frontEnd.vue';
+import BackEnd from '../pages/backEnd.vue';
+import Job from '../pages/job.vue';
 
 Vue.use(VueRouter);
 
@@ -22,16 +23,10 @@ const routes = [
             {path: '/index', name: '充值中心',component: Voucher},
             {path: '/index/voucher', name: '充值中心', component: Voucher},
             {path: '/index/balance', name: '余额账户', component: Balance},
-            {path: '/index/o2o/1', name: 'O2O收银台', component: O2o},
-            {path: '/index/o2o/2', name: 'O2O收银台', component: O2o},
-            {path: '/index/correct', name: '冲正中心', component: Correct},
-            {path: '/index/statistics', name: '订单统计', component: Statistics},
-            {path: '/index/correct', name: '业务办理', component: Correct},
-            {path: '/index/correct', name: '手机配件', component: Correct},
-            {path: '/index/correct', name: '活动中心', component: Correct},
-            {path: '/index/correct', name: '宣传物料', component: Correct},
-            {path: '/index/correct', name: '财务管理', component: Correct},
-            {path: '/index/correct', name: '安全设置', component: Correct}
+            {path: '/index/articleList', name: '文章列表', component: ArticleList},
+            {path: '/index/frontEnd', name: '前端开发', component: FrontEnd},
+            {path: '/index/backEnd', name: '后端开发', component: BackEnd},
+            {path: '/index/job', name: '求职指南', component: Job}
         ]
     }
 ];

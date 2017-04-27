@@ -1,6 +1,25 @@
 <template>
     <div class="bal">
-        <h3>欢迎来到余额账户</h3>
+        <div class="block bal_time">
+            <el-date-picker
+                v-model="value1"
+                type="date"
+                placeholder="选择开始日期"
+                :picker-options="pickerOptions0">
+            </el-date-picker>
+            -
+            <el-date-picker
+                v-model="value1"
+                type="date"
+                placeholder="选择开始日期"
+                :picker-options="pickerOptions0">
+            </el-date-picker>
+            <el-button type="info" class="bal_btn">查询</el-button>
+            <span>今天</span>
+            <span>近7天发布</span>
+        </div>
+
+        {{test1}}
     </div>
 </template>
 
@@ -8,43 +27,57 @@
     export default{
         data(){
             return{
+              pickerOptions0: {
+                  disabledDate(time) {
+                    return time.getTime() < Date.now() - 8.64e7;
+                  }
+                },
+                 value1: '',
+                test1:"",
             }
         },
-        components:{
+        mounted:function(){
+            var that = this;
+            this.$ajax.get('/article/getData').then(function (res) {
+                if(res.data.data.code == 1000){
+                    console.log(res.data.data)
+                    that.test1 = res.data.data;
+                }
+            });
+        },
+        methods: {
+            /*onSubmit() {
+                console.log('submit!');
+            }*/
         }
     }
 </script>
 
 <style lang="scss" scoped>
-    .vou_wp{
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+    .bal{
+        .bal_time{
+            background-color: white;
+            padding: 20px 10px;
+            position: relative;
+            margin: 0 0 15px;
+            .bal_btn{
+                background-color: #FF5F4F;
+                outline: none;
+                border: none;
+                margin-left: 10px;
+            }
+            span{
+                display: inline-block;
+                margin-left: 10px;
+                font-size: 16px;
+                text-decoration: blink;
+                cursor: pointer;
+                transition: all .2s;
+                &:hover{
+                    color: #FF5F4F;
+                    /*text-decoration: underline ;*/
+                }
+            }
+        }
     }
-    .vou_title{
-        padding: 18px 0;
-        width:90%;
-    }
-    .vou_wp li{
-        float:left;
-         margin:20px;
-    }
-    .text {
-    font-size: 14px;
-  }
-  .item {
-    padding: 18px 0;
-
-  }
-  .clearfix:before,
-  .clearfix:after {
-      display: table;
-      content: "";
-  }
-  .clearfix:after {
-      clear: both
-  }
-  .box-card {
-    width: 250px;
-  }
 </style>

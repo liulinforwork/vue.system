@@ -4,7 +4,7 @@
 
             <li class="title">
                 <i class="el-icon-menu"></i>
-                <span>后台管理系统</span>
+                <span>青春修炼手册</span>
             </li>
            <!--<li class="option">-->
                 <!--<el-select v-model="value" placeholder="请选择">-->
@@ -64,17 +64,25 @@
     }
 </script>
 
-<style>
+<style lang="scss" scoped>
+    .el-menu--dark{
+        background-color: white;
+        -moz-box-shadow:0px 0px 5px #A3A3A3;
+        -webkit-box-shadow:0px 0px 5px #A3A3A3;
+        box-shadow:0px 0px 5px #A3A3A3;
+    }
     .header-wraper li {
         float: left;
         margin-right: 20px;
         margin-top: 5px;
     }
     .title {
-        padding: 1em;
-        color:white;
-         height:50px;
-         line-height:50px;
+        /*padding: 1em;*/
+        /*color:white;*/
+        color: black;
+        height:80px;
+        padding-left: 100px;
+        line-height:80px;
     }
     .title span {
         font-size: 1.4em;
