@@ -1,105 +1,30 @@
 <template>
     <div class="vou">
         <el-tabs v-model="activeName">
-            <el-tab-pane label="技能get" name="first">
-                {{list}}
-                <div class="block">
-                    <!--<ul class="vou_wp">-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>通讯账单</h3>-->
-                                <!--<span>话费、流量、固话、宽带</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>网络充值</h3>-->
-                                <!--<span>QQ、网游、支付宝</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>生活服务</h3>-->
-                                <!--<span>话费、流量、固话、宽带</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>充值卡</h3>-->
-                                <!--<span>话费充值卡、中石油加油卡</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>信用卡还款</h3>-->
-                                <!--<span>话费、流量、固话、宽带</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>业务办理</h3>-->
-                                <!--<span>话费、流量、固话、宽带</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                        <!--<li>-->
-                            <!--<i class="el-icon-message icon_phone"></i>-->
-                            <!--<div class="vou_text">-->
-                                <!--<h3>商旅服务</h3>-->
-                                <!--<span>火车、汽车、飞机</span>-->
-                            <!--</div>-->
-                            <!--<hr class="border">-->
-                            <!--<div class="vou_zhangdan">-->
-                                <!--<span>总笔数: 1340</span>-->
-                                <!--<span>总金额: 56586.00元</span>-->
-                            <!--</div>-->
-                        <!--</li>-->
-                    <!--</ul>-->
-                </div>
+            <el-tab-pane label="第一个给自己" name="first">
+                <ul class="vou_wp">
+                    <li v-for="item in list">
+                        <i class="el-icon-message icon_phone"></i>
+                        <div class="vou_title">
+                            <h3>{{item.title}}</h3>
+                            <span>{{item.description}}</span>
+                        </div>
+                        <!--<hr class="border">-->
+                        <div class="vou_number">
+                            <span>热度指数: {{item.count}}</span>
+                            <span>价格: {{item.num}}元</span>
+                        </div>
+                    </li>
+                </ul>
             </el-tab-pane>
-            <el-tab-pane label="动态数据一" name="second">
+            <el-tab-pane label="技术点滴" name="second">
                 {{test1}}
             </el-tab-pane>
-            <el-tab-pane label="动态数据二" name="third">
+            <el-tab-pane label="情感栏目" name="third">
                 {{test2}}
             </el-tab-pane>
-            <el-tab-pane label="静态页面" name="fourth">
-                静态页面
+            <el-tab-pane label="漂亮的页面" name="fourth">
+                漂亮的页面
             </el-tab-pane>
         </el-tabs>
     </div>
@@ -159,7 +84,7 @@
        margin-top: 20px;
        li{
            width: 22%;
-           height: 150px;
+           height: 140px;
            margin: 20px .5%;
            margin-top: 5px;
            display: inline-block;
@@ -171,16 +96,8 @@
            padding: 1%;
            vertical-align: middle;
            background-color: white;
-           .border{
-               color: #A3A3A3;
-               background-color: #A3A3A3;
-               outline: none;
-               margin: 0;
-               border: none;
-               height: 1px;
-           }
            .icon_phone{
-               font-size: 50px;
+               font-size: 70px;
                display: inline-block;
                width: 70px;
                height: 70px;
@@ -190,29 +107,35 @@
                vertical-align: top;
                color: #FF5F4F;
            }
-           .vou_text{
+           .vou_title{
                font-size: 16px;
                display: inline-block;
                width: 50%;
                margin: 10px;
+               color: #999B98;
                h3{
                    margin: 0;
                    color: #59595A;
                }
-               color: #999B98;
            }
-           .vou_zhangdan{
+           .vou_number{
                font-size: 14px;
-               margin: 20px 10px;
+               margin: 15px 10px;
+               margin-top: 0;
+               padding-top: 15px;
+               border-top: 1px solid #F2F2F2;
+               display: flex;
                span{
+                   flex: 1;
                    color: #FF5F4F;
-                   margin-right: 10px;
+                   /*margin-right: 10px;*/
+                   text-align: center;
                }
            }
-           &:hover{
-               background-color: #FF5F4F;
-               color: white;
-           }
+           /*&:hover{*/
+               /*background-color: #FF5F4F;*/
+               /*color: white;*/
+           /*}*/
        }
    }
 </style>

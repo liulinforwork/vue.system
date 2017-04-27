@@ -136,7 +136,7 @@
             }
             .app_right{
                 position: relative;
-                flex: 0 0 260px;
+                flex: 0 0 200px;
                 background-color:white;
             }
         }

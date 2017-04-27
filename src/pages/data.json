@@ -2,21 +2,43 @@
     "list":[
         {
             "imgUrl": "/static/images/read.png",
-            "title": "速闻阅读",
-            "description": "阅读速闻可获得更多测试打卡机会~",
-            "link": "/read"
+            "title": "个人简历",
+            "description": "能说会道、理想青年~",
+            "link": "/read",
+            "count": "1340",
+            "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/invite.png",
-            "title": "邀新赚信用",
-            "description": "快来赚取信用分吧~",
-            "link": "/invite"
+            "imgUrl": "/static/images/read.png",
+            "title": "2017",
+            "description": "新年新气象~",
+            "link": "/read",
+            "count": "1340",
+            "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/fire.png",
-            "title": "搭火线",
-            "description": "参与搭火线活动，还有意外惊喜哦~",
-            "link": "/fire"
+            "imgUrl": "/static/images/read.png",
+            "title": "计划表",
+            "description": "请按计划行事~",
+            "link": "/read",
+            "count": "1340",
+            "num": "9996.00"
+        },
+        {
+            "imgUrl": "/static/images/read.png",
+            "title": "爱好",
+            "description": "休息一下吧，身体最重要~",
+            "link": "/read",
+            "count": "1340",
+            "num": "9996.00"
+        },
+        {
+            "imgUrl": "/static/images/read.png",
+            "title": "相册",
+            "description": "读万卷书，不如行万里路~",
+            "link": "/read",
+            "count": "1340",
+            "num": "9996.00"
         }
     ]
 }
