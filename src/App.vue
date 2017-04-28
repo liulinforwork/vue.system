@@ -105,7 +105,6 @@
         .app_header{
             position: relative;
             flex: 0 0 auto;
-            /*width: 100%;*/
             min-width:820px;
             z-index: 2;
             .title{
@@ -147,8 +146,6 @@
             height: 80px;
             text-align: center;
             line-height: 80px;
-            /*box-shadow: 0 0 5px;*/
-            /*padding: 20px;*/
         }
     }
 </style>

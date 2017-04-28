@@ -12,6 +12,11 @@
             <el-menu-item index="frontEnd">前端开发</el-menu-item>
             <el-menu-item index="backEnd">后端开发</el-menu-item>
         </el-submenu>
+        <el-submenu index="/index/edit">
+            <template slot="title"><i class="el-icon-message"></i>内容编辑</template>
+            <el-menu-item index="Technology">技术文章</el-menu-item>
+            <el-menu-item index="Emotion">心情随笔</el-menu-item>
+        </el-submenu>
         <el-menu-item index="/index/job"><i class="el-icon-setting"></i>求职指南</el-menu-item>
     </el-menu>
 </template>

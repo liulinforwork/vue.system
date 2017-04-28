@@ -3,7 +3,7 @@
         <el-menu theme="dark" default-active="1" class="el-menu-demo" mode="horizontal" @select="handleSelect">
 
             <li class="title">
-                <i class="el-icon-menu"></i>
+                <!--<i class="el-icon-menu"></i>-->
                 <span>青春修炼手册</span>
             </li>
            <!--<li class="option">-->

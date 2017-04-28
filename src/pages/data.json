@@ -1,7 +1,7 @@
 {
     "list":[
         {
-            "imgUrl": "/static/images/read.png",
+            "imgUrl": "el-icon-edit",
             "title": "个人简历",
             "description": "能说会道、理想青年~",
             "link": "/read",
@@ -9,7 +9,7 @@
             "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/read.png",
+            "imgUrl": "el-icon-message",
             "title": "2017",
             "description": "新年新气象~",
             "link": "/read",
@@ -17,7 +17,7 @@
             "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/read.png",
+            "imgUrl": "el-icon-document",
             "title": "计划表",
             "description": "请按计划行事~",
             "link": "/read",
@@ -25,7 +25,7 @@
             "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/read.png",
+            "imgUrl": "el-icon-star-on",
             "title": "爱好",
             "description": "休息一下吧，身体最重要~",
             "link": "/read",
@@ -33,7 +33,7 @@
             "num": "9996.00"
         },
         {
-            "imgUrl": "/static/images/read.png",
+            "imgUrl": "el-icon-picture",
             "title": "相册",
             "description": "读万卷书，不如行万里路~",
             "link": "/read",

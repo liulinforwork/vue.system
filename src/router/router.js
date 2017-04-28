@@ -1,6 +1,4 @@
-/**
- * Created by Administrator on 2017/4/25.
- */
+
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from '../App.vue';
@@ -11,6 +9,8 @@ import ArticleList from '../pages/articleList.vue';
 import FrontEnd from '../pages/frontEnd.vue';
 import BackEnd from '../pages/backEnd.vue';
 import Job from '../pages/job.vue';
+import Technology from '../pages/technology.vue';
+import Emotion from '../pages/emotion.vue';
 
 Vue.use(VueRouter);
 
@@ -26,7 +26,9 @@ const routes = [
             {path: '/index/articleList', name: '文章列表', component: ArticleList},
             {path: '/index/frontEnd', name: '前端开发', component: FrontEnd},
             {path: '/index/backEnd', name: '后端开发', component: BackEnd},
-            {path: '/index/job', name: '求职指南', component: Job}
+            {path: '/index/job', name: '求职指南', component: Job},
+            {path: '/index/technology', name: '技术文章', component: Technology},
+            {path: '/index/emotion', name: '心情随笔', component: Emotion}
         ]
     }
 ];
