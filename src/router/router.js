@@ -2,15 +2,16 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from '../App.vue';
-import Index from '../pages/index.vue';
-import Voucher from '../pages/voucher.vue';
-import Balance from '../pages/balance.vue';
-import ArticleList from '../pages/articleList.vue';
-import FrontEnd from '../pages/frontEnd.vue';
-import BackEnd from '../pages/backEnd.vue';
-import Job from '../pages/job.vue';
-import Technology from '../pages/technology.vue';
-import Emotion from '../pages/emotion.vue';
+import Index from '../views/index.vue';
+import Voucher from '../views/voucher.vue';
+import Balance from '../views/balance.vue';
+import ArticleList from '../views/articleList.vue';
+import FrontEnd from '../views/frontEnd.vue';
+import BackEnd from '../views/backEnd.vue';
+import Job from '../views/job.vue';
+import Technology from '../views/technology.vue';
+import Emotion from '../views/emotion.vue';
+import Charts from '../views/charts.vue';
 
 Vue.use(VueRouter);
 
@@ -28,7 +29,8 @@ const routes = [
             {path: '/index/backEnd', name: '后端开发', component: BackEnd},
             {path: '/index/job', name: '求职指南', component: Job},
             {path: '/index/technology', name: '技术文章', component: Technology},
-            {path: '/index/emotion', name: '心情随笔', component: Emotion}
+            {path: '/index/emotion', name: '心情随笔', component: Emotion},
+            {path: '/index/charts', name: '统计图表', component: Charts}
         ]
     }
 ];

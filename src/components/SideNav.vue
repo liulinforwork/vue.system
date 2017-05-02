@@ -18,6 +18,7 @@
             <el-menu-item index="Emotion">心情随笔</el-menu-item>
         </el-submenu>
         <el-menu-item index="/index/job"><i class="el-icon-setting"></i>求职指南</el-menu-item>
+        <el-menu-item index="/index/charts"><i class="el-icon-setting"></i>统计图表</el-menu-item>
     </el-menu>
 </template>
 
