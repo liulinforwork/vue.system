@@ -1,5 +1,6 @@
 <template>
     <div class="bal">
+        <h3>上传封面图片到七牛云</h3>
     </div>
 </template>
 
