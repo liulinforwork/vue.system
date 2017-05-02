@@ -1,26 +1,26 @@
 <template>
     <div class="bal">
-        {{test1}}
+        <div class="edit-area">
+            <!--<editor v-bind:value=defaultMsg v-bind:config=config v-on:input="input" v-on:ready="ready"></editor>-->
+            <editor v-bind:value=defaultMsg v-bind:config=config></editor>
+        </div>
     </div>
 </template>
 
 <script>
+    import Editor from '../components/editor.vue';
     export default{
         data(){
             return{
-                test1:"",
+                defaultMsg: '初始文本',
+                config: {
+                  initialFrameWidth: null,
+                  initialFrameHeight: 320,
+                },
             }
         },
-        mounted:function(){
-            var that = this;
-            this.$ajax.get('/article/submit').then(function (res) {
-                if(res.data.data.code == 1000){
-                    console.log(res.data.data)
-                    that.test1 = res.data.data;
-                }
-            });
-        },
-        methods: {
+        components: {
+            Editor,
         }
     }
 </script>
