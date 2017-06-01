@@ -3,7 +3,12 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import App from '../App.vue';
 import Index from '../views/index.vue';
-import Voucher from '../views/voucher.vue';
+
+import Personal from '../views/personal/personal.vue';
+import Plan from '../views/personal/plan.vue';
+import Resume from '../views/personal/resume.vue';
+import Album from '../views/personal/album.vue';
+
 import Balance from '../views/balance.vue';
 import ArticleList from '../views/articleList.vue';
 import FrontEnd from '../views/frontEnd.vue';
@@ -12,6 +17,8 @@ import Job from '../views/job.vue';
 import Technology from '../views/technology.vue';
 import Emotion from '../views/emotion.vue';
 import Charts from '../views/charts.vue';
+import Mobile from '../views/mobile.vue';
+import Pc from '../views/pc.vue';
 
 Vue.use(VueRouter);
 
@@ -21,8 +28,8 @@ const routes = [
         component: App,
         children: [
             {path: '', redirect: '/index'},
-            {path: '/index', name: '充值中心',component: Voucher},
-            {path: '/index/voucher', name: '充值中心', component: Voucher},
+            {path: '/index', name: '充值中心',component: Personal},
+            {path: '/index/personal', name: '充值中心', component: Personal},
             {path: '/index/balance', name: '余额账户', component: Balance},
             {path: '/index/articleList', name: '文章列表', component: ArticleList},
             {path: '/index/frontEnd', name: '前端开发', component: FrontEnd},
@@ -30,6 +37,8 @@ const routes = [
             {path: '/index/job', name: '求职指南', component: Job},
             {path: '/index/technology', name: '技术文章', component: Technology},
             {path: '/index/emotion', name: '心情随笔', component: Emotion},
+            {path: '/index/mobile', name: '统计图表', component: Mobile},
+            {path: '/index/pc', name: '统计图表', component: Pc},
             {path: '/index/charts', name: '统计图表', component: Charts}
         ]
     }

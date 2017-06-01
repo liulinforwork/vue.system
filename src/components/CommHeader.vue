@@ -4,7 +4,7 @@
 
             <li class="title">
                 <!--<i class="el-icon-menu"></i>-->
-                <span>青春修炼手册</span>
+                <span>index</span>
             </li>
            <!--<li class="option">-->
                 <!--<el-select v-model="value" placeholder="请选择">-->

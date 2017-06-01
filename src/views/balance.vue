@@ -1,5 +1,6 @@
 <template>
     <div class="bal">
+
         <div class="block bal_time">
             <el-date-picker
                 v-model="value1"
@@ -19,11 +20,14 @@
             <span>近7天发布</span>
         </div>
 
-        {{test1}}
+
+
     </div>
 </template>
 
 <script>
+
+
     export default{
         data(){
             return{
@@ -52,7 +56,6 @@
         }
     }
 </script>
-
 <style lang="scss" scoped>
     .bal{
         .bal_time{
